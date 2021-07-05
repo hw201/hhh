@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <home />
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -10,6 +11,11 @@ import Home from "./views/Home.vue";
 export default {
   name: "App",
   components: { Home },
+  data() {
+    return {
+      msg: "hello",
+    };
+  },
 };
 </script>
 
